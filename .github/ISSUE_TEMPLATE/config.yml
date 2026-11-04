@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord support
+    url: https://discord.gg/AccQuwNYfT
+    about: Questions about setup and config are answered fastest here.
+  - name: SpigotMC resource page
+    url: https://www.spigotmc.org/resources/custommotd-custom-textures-proxy-folia-support.139865/
+    about: Downloads, reviews and the resource discussion.
+  - name: Modrinth
+    url: https://modrinth.com/project/spritemotd
+    about: Downloads and version history.
+  - name: Hangar
+    url: https://hangar.papermc.io/D4rkSn0w/MOTD
+    about: Downloads for Paper and Velocity.

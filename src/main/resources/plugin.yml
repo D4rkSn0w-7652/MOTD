@@ -1,0 +1,22 @@
+name: MOTD
+version: '${project.version}'
+main: me.D4rkSn0w.motd.bukkit.BukkitMotd
+author: D4rkSn0w
+description: MOTD für Paper, Purpur, Folia, Spigot, Sponge, Velocity, BungeeCord und Waterfall
+api-version: '1.20'
+folia-supported: true
+load: POSTWORLD
+
+commands:
+  motd:
+    description: Zeigt Infos zum Plugin, /motd reload lädt die Config neu.
+    usage: /motd
+    aliases: [motdreload]
+
+permissions:
+  motd.admin:
+    description: Erlaubt das Neuladen der MOTD-Config.
+    default: op
+  motd.update:
+    description: Bekommt beim Betreten Bescheid, wenn ein Update bereitsteht.
+    default: op

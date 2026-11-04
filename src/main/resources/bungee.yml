@@ -1,0 +1,5 @@
+name: MOTD
+version: '${project.version}'
+main: me.D4rkSn0w.motd.bungee.BungeeMotd
+author: D4rkSn0w
+description: MOTD für Paper, Purpur, Folia, Spigot, Sponge, Velocity, BungeeCord und Waterfall

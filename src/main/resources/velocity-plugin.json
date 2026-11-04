@@ -1,0 +1,8 @@
+{
+  "id": "motd",
+  "name": "MOTD",
+  "version": "${project.version}",
+  "description": "MOTD für Paper, Purpur, Folia, Spigot, Sponge, Velocity, BungeeCord und Waterfall",
+  "authors": ["D4rkSn0w"],
+  "main": "me.D4rkSn0w.motd.velocity.VelocityMotd"
+}

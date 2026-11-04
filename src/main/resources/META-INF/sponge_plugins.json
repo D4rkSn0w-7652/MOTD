@@ -1,0 +1,30 @@
+{
+  "loader": {
+    "name": "java_plain",
+    "version": "1.0"
+  },
+  "license": "All Rights Reserved",
+  "global": {
+    "version": "${project.version}",
+    "contributors": [
+      {
+        "name": "D4rkSn0w",
+        "description": "Entwickler"
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "spongeapi",
+        "version": "12.0.0"
+      }
+    ]
+  },
+  "plugins": [
+    {
+      "id": "motd",
+      "name": "MOTD",
+      "entrypoint": "me.D4rkSn0w.motd.sponge.SpongeMotd",
+      "description": "MOTD für Paper, Purpur, Folia, Spigot, Sponge, Velocity, BungeeCord und Waterfall"
+    }
+  ]
+}

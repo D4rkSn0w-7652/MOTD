@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest something the plugin should be able to do
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should it do?
+      description: Describe the feature from a server owner's point of view.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is that useful?
+      description: What are you trying to achieve that is not possible today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: How would it look in settings.yml?
+      description: Optional. A sketch of the config helps a lot in judging the idea.
+      render: yaml
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Which platforms would need it?
+      multiple: true
+      options:
+        - Paper / Purpur / Folia
+        - Spigot / Bukkit
+        - Velocity
+        - BungeeCord / Waterfall
+        - Sponge
+        - All of them
+    validations:
+      required: false

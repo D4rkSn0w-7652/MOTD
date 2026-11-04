@@ -1,0 +1,270 @@
+# ============================================================================
+#  MOTD
+#  DE: Dieselbe Config auf allen Plattformen. Geprüfte Bereiche:
+#        Paper, Purpur, Folia, Spigot, Bukkit   MC 1.20 bis 26.3
+#        Velocity                               3.3 bis 4.0
+#        BungeeCord, Waterfall                  alle aktuellen Builds
+#        Sponge                                 ab SpongeAPI 12 (MC 1.20+)
+#      Sprites brauchen zusätzlich MC 1.21.9 auf dem Client, siehe unten.
+#  EN: One config for every platform. Verified ranges:
+#        Paper, Purpur, Folia, Spigot, Bukkit   MC 1.20 to 26.3
+#        Velocity                               3.3 to 4.0
+#        BungeeCord, Waterfall                  all current builds
+#        Sponge                                 SpongeAPI 12 and up (MC 1.20+)
+#      Sprites additionally need MC 1.21.9 on the client, see below.
+#
+#  DE: Farben: &a &b &c ... &l fett, &k verschlüsselt, &r zurücksetzen
+#  EN: Colors: &a &b &c ... &l bold, &k obfuscated, &r reset
+#  DE/EN: Hex &x&R&R&G&G&B&B oder/or &#RRGGBB  (z.B. / e.g. &#00FF99)
+#  DE/EN: Klickbarer Link / clickable link:
+#         <click:open_url:'https://beispiel.de'>Text</click>
+#  DE/EN: Platzhalter / placeholders: %online%  %max%
+# ============================================================================
+
+# DE: Sprache. Die Dateien liegen im Ordner lang/ neben dieser Datei.
+#     Mitgeliefert werden de_DE und en_US. Eigene Sprache: eine der Dateien
+#     kopieren, umbenennen (z.B. fr_FR.yml) und hier eintragen. Fehlt ein
+#     Schlüssel in deiner Datei, wird der Text aus en_US benutzt.
+# EN: Language. The files live in the lang/ folder next to this file.
+#     de_DE and en_US ship with the plugin. For your own language: copy one of
+#     them, rename it (e.g. fr_FR.yml) and set it here. If a key is missing in
+#     your file, the text from en_US is used.
+sprache: "de_DE"
+
+
+# DE: Sprites sind Bilder aus dem Spiel (Blöcke, Items, Symbole) in der MOTD.
+#     Der Client kann das erst ab MC 1.21.9, also Protokoll 773.
+#     Aeltere Clients bekommen automatisch den Fallback-Text.
+#     Hinweis: reines Spigot/Bukkit hat keine API dafür - dort immer Fallback.
+# EN: Sprites are in-game images (blocks, items, icons) shown in the MOTD.
+#     Clients only support this from MC 1.21.9 on, which is protocol 773.
+#     Older clients automatically get the fallback text instead.
+#     Note: plain Spigot/Bukkit has no API for it - fallback is always used.
+sprites-aktiviert: true
+sprite-min-protokoll: 773
+
+# DE: Debug schreibt beim Laden die rohen MOTD-Zeilen ins Log und meldet einmal
+#     pro Client-Protokoll, wie die MOTD zusammengebaut wurde. Warnungen bei
+#     kaputter Config, zu breiten Zeilen oder unbekannten %platzhaltern% kommen
+#     immer, auch ohne Debug.
+# EN: Debug logs the raw MOTD lines on load and reports once per client protocol
+#     how the MOTD was assembled. Warnings about a broken config, overly wide
+#     lines or unknown %placeholders% are always shown, even without debug.
+debug: false
+
+
+# DE: Textformat. "auto" erkennt selbst, ob eine Zeile MiniMessage-Tags enthält,
+#     und mischt beides - &-Codes und Tags dürfen nebeneinander stehen.
+#     "legacy" nutzt nur &-Codes, "minimessage" immer den Tag-Parser.
+#     Unterstützte Tags: <bold> <italic> <underlined> <strikethrough>
+#     <obfuscated> <reset>, alle 16 Farbnamen, <#RRGGBB>,
+#     <gradient:#A:#B> ... </gradient> und <rainbow> ... </rainbow>
+# EN: Text format. "auto" detects by itself whether a line contains MiniMessage
+#     tags and mixes both - & codes and tags may sit next to each other.
+#     "legacy" uses & codes only, "minimessage" always uses the tag parser.
+#     Supported tags: <bold> <italic> <underlined> <strikethrough>
+#     <obfuscated> <reset>, all 16 color names, <#RRGGBB>,
+#     <gradient:#A:#B> ... </gradient> and <rainbow> ... </rainbow>
+format: "auto"
+
+
+motd: |-
+     &f%wildflowers% &b&lMY&f&lEXAMPLE &8» &7My Example Network &f%wildflowers%
+       %noten% &8» &6Example &8| &9Example &8| &dExample &8« %noten%
+
+# DE: Jeder Eintrag hier kann in der MOTD als %name% benutzt werden.
+#     sprite   = der Pfad IM Atlas, nicht die Item-ID.
+#     atlas    = in welcher Bild-Sammlung das Sprite liegt. Achte auf die
+#                Mehrzahl: "minecraft:blocks" und "minecraft:items" - NICHT
+#                "minecraft:block" oder "minecraft:item". Gültig sind:
+#                minecraft:blocks, minecraft:items, minecraft:gui,
+#                minecraft:particles, minecraft:paintings, minecraft:armor_trims,
+#                minecraft:chests, minecraft:decorated_pot,
+#                minecraft:shield_patterns, minecraft:banner_patterns,
+#                minecraft:beds, minecraft:shulker_boxes, minecraft:signs,
+#                minecraft:map_decorations, minecraft:celestials
+#                Stimmt der Name nicht, warnt das Plugin beim Start; eine
+#                vergessene Mehrzahl korrigiert es selbst.
+#     fallback = was Clients anzeigen, die das Sprite nicht zeichnen können
+#                (ältere Versionen als 1.21.9, fehlendes Bild). Der Text wird
+#                mitgeschickt, der Client entscheidet selbst - lass ihn also
+#                nicht leer, sonst bleibt die Stelle dort einfach leer.
+# EN: Every entry here can be used in the MOTD as %name%.
+#     sprite   = the path INSIDE the atlas, not the item ID.
+#     atlas    = which image collection holds the sprite. Mind the plural:
+#                "minecraft:blocks" and "minecraft:items" - NOT
+#                "minecraft:block" or "minecraft:item". Valid ones:
+#                minecraft:blocks, minecraft:items, minecraft:gui,
+#                minecraft:particles, minecraft:paintings, minecraft:armor_trims,
+#                minecraft:chests, minecraft:decorated_pot,
+#                minecraft:shield_patterns, minecraft:banner_patterns,
+#                minecraft:beds, minecraft:shulker_boxes, minecraft:signs,
+#                minecraft:map_decorations, minecraft:celestials
+#                The plugin warns on startup if the name is wrong and fixes
+#                a forgotten plural by itself.
+#     fallback = what clients show when they cannot draw the sprite (older
+#                than 1.21.9, missing image). The text is sent along and the
+#                client decides on its own - so do not leave it empty, or
+#                that spot simply stays blank.
+sprites:
+  wildflowers:
+    atlas: "minecraft:items"
+    sprite: "item/wildflowers"
+    farbe: "white"
+    fallback: "&a&ka&r"
+  noten:
+    atlas: "minecraft:gui"
+    sprite: "icon/music_notes"
+    farbe: "blue"
+    fallback: "&a♪"
+
+# DE: Die Liste, die erscheint, wenn man mit der Maus über die Spielerzahl fährt.
+#     Jede Zeile hier ist ein Eintrag. Platzhalter: %online% %max% %spieler%
+#     und %timer_name% (siehe unten). Sprite-Platzhalter zeigen hier ihren
+#     Fallback-Text, weil das Feld nur einfachen Text kann.
+#     spieler-max  = wie viele Namen %spieler% höchstens auflistet
+#     spieler-mehr = wird angehängt, wenn es mehr sind (%rest% = Anzahl)
+# EN: The list shown when hovering over the player count.
+#     Every line here is one entry. Placeholders: %online% %max% %spieler%
+#     and %timer_name% (see below). Sprite placeholders show their fallback
+#     text here, because the field only supports plain text.
+#     spieler-max  = how many names %spieler% lists at most
+#     spieler-mehr = appended when there are more (%rest% = amount)
+hover:
+  aktiv: true
+  zeilen:
+    - "&a%online%&8/&a%max% &7online"
+    - ""
+    - "&8» &7%spieler%"
+  spieler-max: 10
+  spieler-trenner: "&7, &f"
+  spieler-mehr: "&7 und %rest% weitere"
+  niemand: "&8niemand online"
+
+
+# DE: Modus: ECHT (echte Zahl), FEST (immer der Wert), ONLINE_PLUS (echt + Wert)
+#     Achtung: die Online-Zahl lässt sich auf reinem Spigot/Bukkit nicht ändern.
+# EN: Mode: ECHT (real number), FEST (always the value), ONLINE_PLUS (real + value)
+#     Note: the online count cannot be changed on plain Spigot/Bukkit.
+spieler:
+  online-modus: ECHT
+  online-wert: 0
+  max-modus: ECHT
+  max-wert: 100
+
+# DE: Der Text rechts neben der Spielerzahl.
+#     Protokoll -1 sorgt dafür, dass der Client den Text immer anzeigt.
+# EN: The text next to the player count.
+#     Protocol -1 makes the client always display the text.
+version-anzeige:
+  aktiv: true
+  text: "&b%online%&8/&b%max%"
+  protokoll: -1
+  # DE: Text links NEBEN dem Server-Icon, also in dem freien Bereich links
+  #     davon. Möglich wird das, weil Minecraft die Versionsanzeige rechts
+  #     ausrichtet: das Plugin hängt automatisch so viele Leerzeichen ein,
+  #     dass dein Text nach links über das Icon hinaus wandert. Steht oben
+  #     bei 'text' etwas, wird dessen Breite mitgerechnet.
+  #     Farbcodes mit & funktionieren hier ganz normal (z. B. &7 oder &#ff0000).
+  #     abstand-vom-icon = Abstand in PIXELN zwischen dem Ende deines Textes
+  #     und dem linken Rand des Icons. Größer = weiter nach links, weiter weg
+  #     vom Icon. Kleiner (auch negativ) = näher dran bzw. unters Icon.
+  #     Die Schrittweite beträgt 4 Pixel, weil ein Leerzeichen 4 Pixel breit
+  #     ist. Sitzt es bei dir minimal daneben, verstelle einfach diese Zahl.
+  # EN: Text to the LEFT of the server icon, in the empty area next to it.
+  #     This works because Minecraft right-aligns the version display: the
+  #     plugin appends enough spaces to push your text left past the icon.
+  #     If 'text' above is filled, its width is taken into account.
+  #     Colour codes with & work normally here (e.g. &7 or &#ff0000).
+  #     abstand-vom-icon = distance in PIXELS between the end of your text
+  #     and the left edge of the icon. Larger = further left, further away
+  #     from the icon. Smaller (negative works too) = closer or under it.
+  #     Steps are 4 pixels because a space is 4 pixels wide. If it sits
+  #     slightly off on your setup, just change this number.
+  vor-icon:
+    aktiv: false
+    text: "&7Willkommen!"
+    abstand-vom-icon: 4
+
+# DE: MOTD-Wechsel. Die MOTD oben ist die erste, hier kommen weitere dazu.
+#     abstand = Sekunden, bis zur nächsten gewechselt wird
+#     modus   = REIHE (nach der Reihe) oder ZUFALL
+#     Es läuft ohne Timer-Thread: aus der aktuellen Uhrzeit wird berechnet,
+#     welche MOTD gerade dran ist. Alle Spieler sehen dieselbe.
+# EN: MOTD rotation. The motd above is the first one, more are added here.
+#     abstand = seconds until it switches to the next one
+#     modus   = REIHE (in order) or ZUFALL (random)
+#     No timer thread involved: which MOTD is due is calculated from the
+#     current time, so every player sees the same one.
+motd-wechsel:
+  aktiv: false
+  abstand: 300
+  modus: REIHE
+  liste:
+    - |-
+      &f%wildflowers% &b&lMY&f&lEXAMPLE &8» &7Zweite MOTD &f%wildflowers%
+      %noten% &8» &7Hier steht etwas anderes &8«
+    - |-
+      &f%wildflowers% &b&lMY&f&lEXAMPLE &8» &7Dritte MOTD &f%wildflowers%
+      %noten% &8» &7Und noch etwas &8«
+
+# DE: Timer. Jeder Eintrag bekommt einen Namen und ist dann über
+#     %timer_name% in der MOTD, der Versionsanzeige und der Hover-Liste nutzbar.
+#     Zwei Arten, das Ziel zu setzen - eine davon reicht:
+#     ziel   = fester Zeitpunkt, JJJJ-MM-TT HH:MM oder JJJJ-MM-TT HH:MM:SS
+#     dauer  = einfacher Timer ab Serverstart, z.B. 90s 30m 2h 3d 1w
+#              oder kombiniert: 1d2h30m. Zahl ohne Einheit = Sekunden.
+#              Achtung: beginnt bei jedem Neustart von vorn.
+#              Steht bei ziel etwas, wird dauer ignoriert.
+#     format = welche Einheiten angezeigt werden. Nur die Einheiten, die du
+#              hier verwendest, werden gefüllt - steht kein %wochen% drin,
+#              zählen die Wochen bei den Tagen mit.
+#              %wochen% %tage% %stunden% %minuten% %sekunden%
+#              Mit 2 am Ende immer zweistellig: %stunden2% -> 09
+#     vorbei = Text, sobald das Ziel erreicht ist
+#     Hinweis: Der Serverbrowser aktualisiert erst, wenn der Spieler neu lädt.
+# EN: Timers. Each entry gets a name and can then be used as %timer_name%
+#     in the MOTD, the version display and the hover list.
+#     Two ways to set the target - one of them is enough:
+#     ziel   = fixed point in time, YYYY-MM-DD HH:MM or YYYY-MM-DD HH:MM:SS
+#     dauer  = simple timer from server start, e.g. 90s 30m 2h 3d 1w
+#              or combined: 1d2h30m. A number without a unit means seconds.
+#              Note: starts over on every restart.
+#              If ziel is filled, dauer is ignored.
+#     format = which units are shown. Only the units you use here get filled -
+#              without %wochen%, the weeks are counted into the days.
+#              %wochen% %tage% %stunden% %minuten% %sekunden%
+#              Add 2 for always two digits: %stunden2% -> 09
+#     vorbei = text once the target is reached
+#     Note: the server browser only updates when the player refreshes.
+timer:
+  aktiv: false
+  liste:
+    event:
+      ziel: "2026-12-24 18:00"
+      format: "&e%tage%T &8| &e%stunden2%:%minuten2%"
+      vorbei: "&aLäuft jetzt!"
+      fehler: "&c?"
+    neustart:
+      dauer: "6h"
+      format: "&e%stunden%h %minuten%m"
+      vorbei: "&cjetzt"
+      fehler: "&c?"
+
+
+# DE: Auf Bukkit gibt es /motd und /motdreload immer. Eigene Namen werden dort
+#     zusätzlich angemeldet, auf Sponge, Velocity und BungeeCord direkt benutzt.
+# EN: On Bukkit /motd and /motdreload always exist. Custom names are registered
+#     in addition there, while Sponge, Velocity and BungeeCord use them directly.
+befehl:
+  name: "motd"
+  alias: "motdreload"
+  rechte: "motd.admin"
+
+# DE: Update-Checker. Prüft beim Start und danach alle 30 Minuten, ob es eine
+#     neuere Version gibt. Das Ergebnis steht in der Konsole, und Admins (OP oder das Recht
+#     motd.update) bekommen beim Betreten und bei /motd eine Nachricht. false schaltet die Prüfung komplett ab.
+# EN: Update checker. Checks on startup and then every 30 minutes whether a newer
+#     version exists. The result goes to the console, and admins (OP or the motd.update
+#     permission) get a message on join and on /motd. false turns the check off completely.
+update-checker: true

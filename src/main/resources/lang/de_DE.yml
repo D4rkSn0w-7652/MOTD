@@ -1,0 +1,24 @@
+# ============================================================================
+#  Sprachdatei Deutsch (de_DE)
+#
+#  Die Schlüssel links sind fest und dürfen nicht geändert werden - nur die
+#  Texte rechts. Eigene Sprachen: Datei kopieren, z.B. zu fr_FR.yml, und in
+#  der settings.yml unter 'sprache' eintragen.
+#
+#  Farben: &a &b &c ... &l fett, &r zurücksetzen
+#  Hex: &x&R&R&G&G&B&B oder &#RRGGBB
+#  MiniMessage: <gradient:#A:#B>Text</gradient>, <rainbow>Text</rainbow>
+#  Klickbarer Link: <click:open_url:'https://...'>Text</click>
+# ============================================================================
+
+# Steht vor jeder Nachricht.
+prefix: "&8[&aMOTD&8] &7"
+
+reloaded: "&aEinstellungen neu geladen."
+no-permission: "&cDazu hast du keine Rechte."
+
+# %new% = verfügbare Version, %current% = installierte Version
+# Die drei Namen in der zweiten Zeile sind anklickbar und öffnen die Seite.
+update: |-
+  &eVersion %new% ist verfügbar! Installiert ist %current%.
+  <click:open_url:'https://hangar.papermc.io/D4rkSn0w/MOTD'>&#608EA4&lH&#60869A&la&#617E8F&ln&#617585&lg&#626D7A&la&#626570&lr</click> &r&7| <click:open_url:'https://modrinth.com/project/spritemotd'>&#2E3E32&lM&#2B4E31&lo&#275D30&ld&#246D2F&lr&#207C2F&li&#1D8C2E&ln&#199B2D&lt&#16AB2C&lh</click> &r&7| <click:open_url:'https://www.spigotmc.org/resources/custommotd-custom-textures-proxy-folia-support.139865/'>&#B3C321&lS&#9EB048&lp&#889D6E&li&#738B95&lg&#5D78BB&lo&#4865E2&lt</click>

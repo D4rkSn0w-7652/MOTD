@@ -1,0 +1,299 @@
+# MOTD – Proprietary License
+
+Copyright (c) 2026 D4rkSn0w. All rights reserved.
+
+Developed and maintained by D4rkSn0w, KaktusCrew Network Developers.
+
+## 1. Permissions
+
+You are permitted to:
+
+- Use this software free of charge.
+- View and study the source code.
+- Create forks of this project.
+- Modify the source code.
+- Publish forks and modified versions, provided that all requirements of this license are met.
+- Share unmodified copies of the compiled software privately, for example with
+  the staff of your own network or between your own servers.
+
+Use of this software on commercial servers and networks is expressly permitted.
+It does not matter whether the server generates revenue, for example through
+ranks, cosmetics, donations, advertising or any other form of monetisation.
+What is prohibited is selling, licensing or monetising the software itself; see
+Section 4.
+
+### Unmodified redistribution
+
+Offering the unmodified compiled software as a download available to the public
+is not permitted. This includes mirrors, download portals, plugin collections,
+"free plugin" lists, and server packs or modpacks offered to the public. Link to
+one of the official download pages instead:
+
+- https://www.spigotmc.org/resources/custommotd-custom-textures-proxy-folia-support.139865/
+- https://modrinth.com/project/spritemotd
+- https://hangar.papermc.io/D4rkSn0w/MOTD
+
+Hosting an unmodified copy of the **source code** publicly, for example as a
+fork on a code hosting platform, is permitted provided Section 2 is met. The
+restriction above applies to the compiled software, not to the source code.
+
+Publishing a modified version is governed by Sections 2, 3 and 4.
+
+## 2. Attribution Requirements
+
+When distributing this software or a modified version, you must:
+
+- Clearly credit the original author, D4rkSn0w.
+- Include a link to the original GitHub repository.
+- Preserve all original copyright and license notices.
+- Clearly indicate that your project is based on the original MOTD project.
+- Clearly describe the modifications and additional features.
+
+Original repository: https://github.com/D4rkSn0w-7652/MOTD
+
+### Where the credit must appear
+
+The credit and the repository link must be visible without reading the source
+code, in each of the following places that applies to your distribution:
+
+- On every page from which your version can be downloaded, in the visible
+  description text — not only in a changelog, a screenshot, a source comment or
+  a collapsed section. This covers resource and project pages on platforms such
+  as SpigotMC, Modrinth, Hangar and BuiltByBit as well as your own website.
+- In the README or the equivalent front page of your repository, if you publish
+  the source code.
+- In the LICENSE file or in a NOTICE file shipped alongside your distribution.
+- In your version's own plugin information output, if it has one, for example the
+  command corresponding to `/motd` in this project.
+
+The description of your modifications required above must be specific enough
+that a reader can tell what your version does differently. "Improved",
+"optimised" or "fixed" on their own are not sufficient.
+
+## 3. Modification Requirements
+
+Forks and modified versions must introduce meaningful and substantial changes.
+
+The following do not qualify as meaningful modifications on their own:
+
+- Renaming classes, methods or variables.
+- Changing package names.
+- Changing the plugin name or branding.
+- Making minor cosmetic changes.
+- Performing superficial code restructuring.
+
+Removing parts of the original also does not qualify on its own. This includes
+removing features, the update checker, the metrics collection or the original
+branding.
+
+Simply republishing the original project with minor modifications is not permitted.
+
+### What does qualify
+
+A modification qualifies under this Section if it does at least one of the
+following, in a way that is apparent to someone using the plugin:
+
+- Adds a feature the original does not have.
+- Adds support for a platform, a server version or an API the original does not support.
+- Changes how an existing feature behaves, in a way that is configurable or
+  visible in the result.
+- Connects the plugin to another plugin or to an external system.
+- Replaces or substantially reworks an existing implementation for a stated
+  technical reason, such as performance, compatibility or memory use.
+
+Translations, changed config defaults, reformatting and build configuration
+changes are welcome, but do not by themselves meet this requirement.
+
+Whether a modification meets this requirement is determined by the copyright
+holder. If you are unsure, ask before publishing — asking is free and an answer
+in advance is binding: https://discord.gg/AccQuwNYfT
+
+## 4. Distribution Restrictions
+
+You are not permitted to:
+
+- Sell this software or modified versions.
+- Offer this software or modified versions as paid downloads.
+- Place this software or modified versions behind a paywall, a purchase, a
+  subscription or any other payment, including as part of a paid bundle.
+- Redistribute the original project as your own.
+- Offer the unmodified compiled software as a public download, as set out in Section 1.
+- Publish modified versions without complying with the attribution and modification requirements.
+- Remove or alter original copyright and license notices.
+- Claim original authorship or ownership of the original project.
+
+For the avoidance of doubt: running this software on a server or network that
+earns money is not a violation of this Section, as stated in Section 1.
+
+## 5. Ownership
+
+This Section separates four kinds of material.
+
+**The original project.** All rights not expressly granted by this license remain
+with the copyright holder, D4rkSn0w. The original MOTD project and its original
+components remain the property of D4rkSn0w.
+
+**Third-party components.** The components listed in Section 9 belong to their
+respective authors. They are not owned by the copyright holder, and nothing in
+this license asserts any claim over them.
+
+**Contributions by others.** A contribution accepted into this project remains
+the property of its author. The copyright holder does not become its owner and
+receives only the licence described in Section 10. Contributors keep their
+copyright, and any copyright notice they supply with their contribution is
+retained.
+
+**Your own modifications.** Code you write yourself in a fork belongs to you.
+That ownership does not extend to the parts of the original project your code is
+based on or combined with, and your fork as a whole remains subject to this
+license.
+
+## 6. Disclaimer and Limitation of Liability
+
+This software is provided "AS IS", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and non-infringement.
+
+To the fullest extent permitted by applicable law, the author shall not be
+liable for any direct, indirect, incidental, special or consequential damages,
+including but not limited to loss of data, loss of profits, server downtime or
+business interruption, arising out of the use of or the inability to use this
+software, even if advised of the possibility of such damages.
+
+Liability for intent and for gross negligence, liability for injury to life,
+body or health, and any other liability that cannot be excluded or limited
+under applicable mandatory law remain unaffected by this Section.
+
+## 7. License Changes
+
+The copyright holder reserves the right to update or change this license for future releases.
+
+Previously distributed versions remain subject to the license applicable at the time of their distribution, unless otherwise agreed.
+
+This right belongs to the copyright holder alone and is not limited by Section 8.
+
+## 8. License Consistency for Forks and Redistributions
+
+This Section applies to you as a licensee, that is to every fork, modified
+version and redistribution created by anyone other than the copyright holder.
+It does not apply to releases made by the copyright holder, which are governed
+by Section 7.
+
+Every fork, modified version and redistribution of this project must remain
+under this same license.
+
+You are not permitted to:
+
+- Change, replace or remove this license.
+- Distribute modified versions under a different license.
+- Apply additional terms that conflict with this license.
+- Remove this license from any redistributed version.
+
+All original license terms must remain in effect for every fork and
+redistribution of this project.
+
+This Section applies to the original components of this project only. It does
+not apply to the third-party components described in Section 9, which remain
+under their own licenses.
+
+## 9. Third-Party Components
+
+This software bundles third-party components that are not covered by this
+license and remain under the terms of their respective authors:
+
+- SnakeYAML, Apache License 2.0 — https://bitbucket.org/snakeyaml/snakeyaml
+- bStats, MIT License — https://bstats.org
+
+The complete license texts and copyright notices are reproduced in
+THIRD-PARTY-NOTICES.md and in the licenses/ directory of this repository, and
+must be retained in full in any redistribution of this software, whether as
+source code or as a compiled artifact.
+
+Nothing in this license limits, alters or revokes any right granted to you by
+the licenses of those components.
+
+## 10. Contributions
+
+### Code contributions
+
+If you submit code, resources or documentation **for inclusion** in this
+project, for example as a pull request or a patch, you grant the copyright
+holder a perpetual, worldwide, irrevocable, royalty-free and sublicensable right
+to use, reproduce, modify and distribute that material as part of this project
+and its future releases, under this license.
+
+This grant is limited to the material you actually submit for inclusion and to
+use within this project. It transfers no ownership: you keep the copyright in
+your contribution, as set out in Section 5. The copyright holder is under no
+obligation to accept, merge or keep any contribution.
+
+You confirm that you are entitled to grant this right for the material you
+submit and that it does not infringe the rights of others.
+
+### Ideas, bug reports and suggestions
+
+An issue, a bug report, a feature request or a suggestion made in conversation
+is **not** a code contribution and is not covered by the grant above. No rights
+in it pass to the copyright holder.
+
+The copyright holder may nevertheless act on such a report or suggestion,
+including by implementing it independently, without owing you anything in
+return. Equally, making a report or a suggestion gives you no rights in this
+project and no claim to authorship of it.
+
+If you include code in an issue or a message and offer it for inclusion, that
+code counts as a code contribution under this Section.
+
+## 11. Termination
+
+The permissions granted in Section 1 terminate automatically if you fail to
+comply with any term of this license.
+
+### Curing a violation
+
+Curing a violation means ending the violating conduct and undoing its effect.
+Depending on what went wrong, that is:
+
+- Adding or correcting the credit and the repository link required by Section 2.
+- Taking down a download that Section 1 or Section 4 does not permit.
+- Restoring this license, in full and unchanged, where it was replaced, altered
+  or removed.
+- Removing the price, paywall or payment requirement placed on the software.
+
+### Reinstatement
+
+Your permissions are reinstated:
+
+- **provisionally**, as soon as you end the violation, and **permanently** if
+  the copyright holder does not notify you of that violation within 60 days
+  after it ended;
+- **permanently**, if the copyright holder notifies you of the violation and you
+  cure it within 30 days of receiving that notice;
+- **permanently**, if the copyright holder reinstates them expressly in writing.
+
+Reinstatement under the first two points is not available if the copyright
+holder has already notified you of the same violation once before and you have
+repeated it. In that case only an express written reinstatement restores your
+permissions.
+
+Notice may be given in writing by any means by which the copyright holder can
+reasonably reach you, including a message on the platform where you published
+your version.
+
+Reinstatement does not affect any claim arising from the period during which the
+violation lasted.
+
+The termination of your permissions does not terminate the permissions of anyone
+who received a copy from you in compliance with this license.
+
+Sections 5, 6, 9 and 10 survive the termination of this license.
+
+## 12. Severability and Governing Law
+
+If any provision of this license is held to be invalid or unenforceable, that
+provision shall be applied with the minimum modification necessary to make it
+valid and enforceable, and all remaining provisions remain in full force and
+effect.
+
+This license is governed by the laws of the Federal Republic of Germany,
+excluding its conflict-of-law rules.

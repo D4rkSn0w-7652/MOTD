@@ -1,0 +1,25 @@
+# ============================================================================
+#  Language file English (en_US)
+#
+#  The keys on the left are fixed and must not be changed - only the texts on
+#  the right. For your own language: copy this file, e.g. to fr_FR.yml, and set
+#  it in settings.yml under 'sprache'.
+#
+#  Colors: &a &b &c ... &l bold, &r reset
+#  Hex: &x&R&R&G&G&B&B   MiniMessage: <gradient:#A:#B>text</gradient>
+#
+#  This file is also the fallback: if a key is missing in another language
+#  file, the text from here is used.
+# ============================================================================
+
+# Put in front of every message.
+prefix: "&8[&aMOTD&8] &7"
+
+reloaded: "&aSettings reloaded."
+no-permission: "&cYou are not allowed to do that."
+
+# %new% = available version, %current% = installed version
+update: |-
+  &eVersion %new% is available! You have %current%.
+  <click:open_url:'https://hangar.papermc.io/D4rkSn0w/MOTD'>&#608EA4&lH&#60869A&la&#617E8F&ln&#617585&lg&#626D7A&la&#626570&lr</click> &r&7| <click:open_url:'https://modrinth.com/project/spritemotd'>&#2E3E32&lM&#2B4E31&lo&#275D30&ld&#246D2F&lr&#207C2F&li&#1D8C2E&ln&#199B2D&lt&#16AB2C&lh</click> &r&7| <click:open_url:'https://www.spigotmc.org/resources/custommotd-custom-textures-proxy-folia-support.139865/'>&#B3C321&lS&#9EB048&lp&#889D6E&li&#738B95&lg&#5D78BB&lo&#4865E2&lt</click>
+
